@@ -240,7 +240,6 @@ MonoBehaviour:
     - {fileID: 2010060232}
     - {fileID: 1581331783}
   waitingForAnswer: 0
-  answerId: -1
 --- !u!114 &483805814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,7 +384,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 365.0435, y: -267.08374}
+  m_AnchoredPosition: {x: 365.04346, y: -267.08374}
   m_SizeDelta: {x: 740.4533, y: 164.7225}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &569777551
@@ -435,6 +434,18 @@ MonoBehaviour:
       - m_Target: {fileID: 569777554}
         m_TargetAssemblyTypeName: ButtonClicked, Assembly-CSharp
         m_MethodName: setAnswerId
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 822207184}
+        m_TargetAssemblyTypeName: test, Assembly-CSharp
+        m_MethodName: Say
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -594,12 +605,12 @@ MonoBehaviour:
   - "Ol\xE1, nunca te vi por aqui antes.:JORGE"
   - "Voc\xEA \xE9 novo por aqui?:JORGE"
   x:
-  - "Ah, s\xE9rio."
-  - "Quer que eu te mostre como \xE9 o bairro?"
-  - "N\xE3o precisa se preocupar todos s\xE3o pessoas boas aqui."
+  - "Ah, s\xE9rio.:JORGE"
+  - "Quer que eu te mostre como \xE9 o bairro?:JORGE"
+  - "N\xE3o precisa se preocupar todos s\xE3o pessoas boas aqui.:JORGE"
   z:
-  - Nossa, sabia que eu tenho um amigo que vem do mesmo lugar.
-  - "Qualquer dia desses pod\xEDamos sair juntos para beber."
+  - Nossa, sabia que eu tenho um amigo que vem do mesmo lugar.:JORGE
+  - "Qualquer dia desses pod\xEDamos sair juntos para beber.:JORGE"
   choices:
   - Sim, acabei de chegar aqui.
   - "N\xE3o, apenas que eu moro do outro lado da cidade."
@@ -737,7 +748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 365.0435, y: -82.36125}
+  m_AnchoredPosition: {x: 365.04346, y: -82.36125}
   m_SizeDelta: {x: 740.4533, y: 164.7225}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1065347986
@@ -787,6 +798,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1065347989}
         m_TargetAssemblyTypeName: ButtonClicked, Assembly-CSharp
         m_MethodName: setAnswerId
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 822207184}
+        m_TargetAssemblyTypeName: test, Assembly-CSharp
+        m_MethodName: Say
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
