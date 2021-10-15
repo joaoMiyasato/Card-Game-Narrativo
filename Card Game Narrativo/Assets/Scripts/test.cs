@@ -25,6 +25,7 @@ public class test : MonoBehaviour
         dialogue = SpeechManager.instance;
     }
 
+    private bool once = false;
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
@@ -33,11 +34,12 @@ public class test : MonoBehaviour
             {
                 AnswerManager.instance.waitingForAnswer = true;
             }
-            if(AnswerManager.instance.waitingForAnswer)
+            if(AnswerManager.instance.waitingForAnswer && !once)
             {
                 AnswerManager.instance.setNumberOfAnswers(2);
                 AnswerManager.instance.setAnswers(choices[0], choices[1]);
                 AnswerManager.instance.answerPanel.SetActive(true);
+                once = true;
             }
             if(!dialogue.isSpeaking && !AnswerManager.instance.waitingForAnswer || dialogue.waitingInput && !AnswerManager.instance.waitingForAnswer)
             {
