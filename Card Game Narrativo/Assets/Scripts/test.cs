@@ -19,10 +19,10 @@ public class test : MonoBehaviour
     public string[] choices = new string[2];
     int index = 0;
     private string[] atual; 
-    SpeechManager dialogue;
+    SpeachManager dialogue;
     void Start()
     {
-        dialogue = SpeechManager.instance;
+        dialogue = SpeachManager.instance;
     }
 
     private bool once = false;
