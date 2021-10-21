@@ -95,10 +95,11 @@ public class DialogManager : MonoBehaviour
     private string lastSpeaker = "";
     public void Say()
     {
-        updateDialogue();
+        if(answerId != -1)
+            updateDialogue();
         string[] parts = DialogList[indexDialogList].Dialog[indexDialog].Split(':');
         string speach = parts[0];
-        string speaker = (parts.Length >= 2) ? parts[1] : lastSpeaker;
+        string speaker = (parts.Length >= 2 && parts[1] != "") ? parts[1] : lastSpeaker;
 
         if(parts.Length >= 3)
         {
@@ -112,6 +113,17 @@ public class DialogManager : MonoBehaviour
             }
         }
 
+        if(parts.Length >= 4)
+        {
+            if(parts[3] == "true")
+            {
+                //BATALHA
+            }
+            else
+            {
+                //NADA
+            }
+        }
         if(lastSpeaker != speaker)
         {
             lastSpeaker = speaker;
@@ -119,5 +131,6 @@ public class DialogManager : MonoBehaviour
 
         dialogue.Say(speach, speaker);
         indexDialog++;
+        Debug.Log(indexDialog);
     }
 }

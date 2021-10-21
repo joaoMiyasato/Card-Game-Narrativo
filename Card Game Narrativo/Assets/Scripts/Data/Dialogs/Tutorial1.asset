@@ -14,8 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
-  - 
-  - 
-  - 
-  - 
+  - "E ent\xE3o, como eu me sa\xED transformada em tigre?:Illana"
+  - "Voc\xEA ainda pode melhorar o seu tempo de transforma\xE7\xE3o.:Azarys"
+  - "Precisamos ser r\xE1pidos para lidar com eventuais problemas."
+  - E nada mais?:Illana
+  - "Falta pouco para a perfei\xE7\xE3o."
+  - Ha-ha.:Azarys
+  - "Talvez dev\xEAssemos parar os treinos pr\xE1ticos para focarmos no seu ego."
+  - "N\xE3o, mestre.:Illana"
+  - Sinto muito.
+  - "Voc\xEA possui muita habilidade e capacidade energ\xE9tica, mas ainda temos
+    muito para refinar na sua magia.:Azarys"
+  - "Agora escolha a pr\xF3xima transforma\xE7\xE3o, dessa vez faremos um pequeno
+    duelo.::true"

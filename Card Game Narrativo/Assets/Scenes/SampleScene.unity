@@ -401,6 +401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogList:
   - {fileID: 11400000, guid: e68864dda762add4e8beaf3256c07c44, type: 2}
+  - {fileID: 11400000, guid: 40757de9ce18d9942bd46659b98bddb5, type: 2}
   AnswerList:
   - {fileID: 11400000, guid: 263e8275569c4de46bb414f422eb0178, type: 2}
 --- !u!1 &555565455
@@ -575,8 +576,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 822207184}
-        m_TargetAssemblyTypeName: test, Assembly-CSharp
+      - m_Target: {fileID: 483805816}
+        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
         m_MethodName: Say
         m_Mode: 1
         m_Arguments:
@@ -704,62 +705,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!1 &822207183
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 822207185}
-  - component: {fileID: 822207184}
-  m_Layer: 0
-  m_Name: Dialog_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &822207184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822207183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fd49fa959391ce468674d73d0a51a55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  s:
-  - "Ol\xE1, nunca te vi por aqui antes.:JORGE"
-  - "Voc\xEA \xE9 novo por aqui?:JORGE"
-  x:
-  - "Ah, s\xE9rio.:JORGE"
-  - "Quer que eu te mostre como \xE9 o bairro?:JORGE"
-  - "N\xE3o precisa se preocupar todos s\xE3o pessoas boas aqui.:JORGE"
-  z:
-  - Nossa, sabia que eu tenho um amigo que vem do mesmo lugar.:JORGE
-  - "Qualquer dia desses pod\xEDamos sair juntos para beber.:JORGE"
-  choices:
-  - Sim, acabei de chegar aqui.
-  - "N\xE3o, apenas que eu moro do outro lado da cidade."
---- !u!4 &822207185
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822207183}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 982.8201, y: 447.2726, z: -586.0266}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,8 +884,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 822207184}
-        m_TargetAssemblyTypeName: test, Assembly-CSharp
+      - m_Target: {fileID: 483805816}
+        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
         m_MethodName: Say
         m_Mode: 1
         m_Arguments:
@@ -1198,7 +1143,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1537,7 +1482,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3

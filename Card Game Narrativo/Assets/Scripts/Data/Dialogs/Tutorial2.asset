@@ -13,4 +13,47 @@ MonoBehaviour:
   m_Name: Tutorial2
   m_EditorClassIdentifier: 
   type: 1
-  Dialog: []
+  Dialog:
+  - Muito bem, muito bem.:Azarys
+  - "Em breve n\xE3o terei o que lhe ensinar sobre as transforma\xE7\xF5es em si."
+  - "Sobrar\xE1 apenas a pr\xE1tica constante."
+  - "Continuaremos amanh\xE3, voc\xEA precisa descansar."
+  - "Voc\xEA est\xE1 ficando velho, mestre.:Illana"
+  - "J\xE1 est\xE1 sem energia?"
+  - "Ainda n\xE3o, mas voc\xEA parece exausta.:Azarys"
+  - "N\xE3o h\xE1 raz\xE3o para arriscar uma nova transforma\xE7\xE3o."
+  - "Se voc\xEA n\xE3o est\xE1 mesmo cansado, coloque-me para dormir com uma hist\xF3ria,
+    como voc\xEA fazia quando eu era mais nova.:Illana"
+  - "Hahaha. Alguma raz\xE3o especial?:Azarys"
+  - Hoje mais cedo eu estava pensando por tudo que passei como sua aprendiz e me
+    deu uma certa nostalgia.:Illana
+  - Tudo bem.:Azarys
+  - "N\xE3o ser\xE1 um problema."
+  - "Que hist\xF3ria voc\xEA quer?"
+  - "A da forma\xE7\xE3o do Imp\xE9rio e do banimento da magia corrupta.:Illana"
+  - "Antes do imp\xE9rio existir, diversas min\xFAsculas na\xE7\xF5es ocupavam este
+    territ\xF3rio. Elas guerreavam constantemente pelos mais variados motivos, de
+    desentendimentos fronteiri\xE7os a casamentos que deram errado.:Azarys"
+  - "E em meio a tantos combates, a magia corrupta misturava-se \xE0 magia natural. "
+  - "A ess\xEAncia de todas os seres era utilizada sem restri\xE7\xF5es pelos magos
+    em suas transforma\xE7\xF5es, e a maioria deles cumpria qualquer servi\xE7o,
+    desde que fosse bem pago."
+  - "Ent\xE3o AGOLLAZ surgiu com sua genialidade e desejo de paz. "
+  - "Aos poucos, ele uniu diferentes na\xE7\xF5es sob seu controle, \xE0s vezes por
+    casamento, outras por conquista, mas a maioria delas por diplomacia, ao mostrar
+    uma capacidade enorme de governar."
+  - "Na\xE7\xE3o por na\xE7\xE3o, AGOLLAZ iniciou a constru\xE7\xE3o deste imp\xE9rio. "
+  - "S\xF3 que o reflexo da magia corrupta ainda podia ser visto por todos os lados. "
+  - "Magos levados \xE0 insanidade e \xE0 selvageria, esp\xEDritos que nunca seriam
+    recuperados das garras da corrup\xE7\xE3o. "
+  - "Ent\xE3o AGOLLAZ decretou que apenas a magia natural seria permitida, considerando
+    um crime a utiliza\xE7\xE3o da magia corrupta. "
+  - "Ele foi assassinado por isso, mas ERGOLLOZ, seu filho, conseguiu impor a lei
+    a todo o imp\xE9rio. "
+  - "Desde ent\xE3o, a maldade inerente \xE0 magia corrupta n\xE3o voltou a atrapalhar
+    o caminho do imp\xE9rio."
+  - "E, se os deuses quiserem, nunca voltar\xE1."
+  - "Mestre, voc\xEA j\xE1 se perguntou se tudo isso \xE9 mesmo verdade? :Illana"
+  - "Claro que \xE9. :Azarys"
+  - Agora durma bem.
+  - "At\xE9 amanh\xE3."
