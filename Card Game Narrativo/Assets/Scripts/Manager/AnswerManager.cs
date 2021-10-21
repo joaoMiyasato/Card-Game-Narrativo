@@ -15,12 +15,6 @@ public class AnswerManager : MonoBehaviour
         instance = this;
     }
 
-
-
-
-
-
-
 #region setAnswers
     public void setAnswers(string a)
     {
