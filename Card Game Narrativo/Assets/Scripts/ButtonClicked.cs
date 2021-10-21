@@ -7,7 +7,7 @@ public class ButtonClicked : MonoBehaviour
     public int buttonId;
     public void setAnswerId()
     {
-        test.answerId = buttonId;
+        DialogManager.answerId = buttonId;
         AnswerManager.instance.answerPanel.SetActive(false);
         AnswerManager.instance.waitingForAnswer = false;
     }
