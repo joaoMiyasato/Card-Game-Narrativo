@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BattleHUD2 : MonoBehaviour
+public class Unit : MonoBehaviour
 {
       public string unitName;
     public int unitLevel;
@@ -10,12 +10,13 @@ public class BattleHUD2 : MonoBehaviour
     public int damage;
 
     public int maxHP;
-    public int currentHp;
+    public int currentHP;
 
-    public void TakeDamage(int dmg)
+    public bool TakeDamage(int dmg)
     {
 
       currentHP -= dmg;
+
       if(currentHP<= 0)
           return true;
       else 
@@ -24,9 +25,11 @@ public class BattleHUD2 : MonoBehaviour
     
     public void Heal(int amount)
     {
-      currentHP -= amount;
+      currentHP += amount;
+
       if(currentHP > maxHP)
-         current = maxHP;
+
+         currentHP = maxHP;
     }
 
 }

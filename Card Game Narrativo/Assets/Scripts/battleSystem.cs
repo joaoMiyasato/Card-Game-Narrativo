@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum BattleState{ START , PLAYERTURN, ENEMYTURN, WON, LOS}
+public enum BattleState{ START , PLAYERTURN, ENEMYTURN, WON, LOST}
 
 public class battleSystem : MonoBehaviour
 {
@@ -44,13 +44,10 @@ public class battleSystem : MonoBehaviour
         playerHUD.SetHUD(playerUnit);
         enemyHUD.SetHUD(enemyUnit);
 
-        yield return new WaitforSeconds(2f);
+        yield return new WaitForSeconds (2f);
 
         state = BattleState.PLAYERTURN;
         PlayerTurn();
-
-
-
 
     }
 
@@ -61,7 +58,7 @@ public class battleSystem : MonoBehaviour
         enemyHUD.SetHP(enemyUnit.currentHP);
         dialogueText.text = " the attack is successful";
 
-        yield return new WaitforSeconds(2f);
+        yield return new WaitForSeconds(2f);
 
         if(isDead)
         {
@@ -78,21 +75,23 @@ public class battleSystem : MonoBehaviour
     IEnumerator EnemyTurn()
     {
         dialogueText.text = enemyUnit.unitName + " attack!";
-        yield return new WaitforSeconds(1F);
+
+        yield return new WaitForSeconds(1F);
+
         bool isDead = playerUnit.TakeDamage(enemyUnit.damage);
 
-        playerHUD.SetHP(playerUnit.currentHp);
+        playerHUD.SetHP(playerUnit.currentHP);
 
-       yield return new WaitforSeconds(1F);
+       yield return new WaitForSeconds(1F);
 
        if(isDead)
        {
-           state = battleState.Lost;
+           state = BattleState.LOST;
            EndBattle();
        }else
        {
            state = BattleState.PLAYERTURN;
-           playerTurn();
+           PlayerTurn();
        }
         
     }
@@ -120,12 +119,12 @@ public class battleSystem : MonoBehaviour
         playerHUD.SetHP(playerUnit.currentHP);
         dialogueText.text ="you feel renewed strength";
 
-        yield return new WaitforSeconds(2F);
+        yield return new WaitForSeconds(2F);
         
         state = BattleState.ENEMYTURN;
         StartCoroutine(EnemyTurn());
     }
-    void onAttackButton()
+    public void onAttackButton()
     {
         if(state !=BattleState.PLAYERTURN)
            return;
@@ -134,9 +133,9 @@ public class battleSystem : MonoBehaviour
     }
 
 
-    void onHealButton()
+    public void onHealButton()
     {
-        if(state !=BattleState.PLAYERTURN)
+        if(state != BattleState.PLAYERTURN)
            return;
 
            StartCoroutine(PlayerHeal());
