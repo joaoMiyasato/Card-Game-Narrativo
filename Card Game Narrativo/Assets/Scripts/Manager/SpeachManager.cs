@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SpeechManager : MonoBehaviour
+public class SpeachManager : MonoBehaviour
 {
-    public static SpeechManager instance;
+    public static SpeachManager instance;
     public ELEMENTS elements;
     void Awake()
     {
