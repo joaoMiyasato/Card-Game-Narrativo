@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonClicked : MonoBehaviour
+public class VisualNovelButton : MonoBehaviour
 {
     public int buttonId;
     public void setAnswerId()
