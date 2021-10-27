@@ -87,6 +87,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: Eevee
   unitLevel: 100
-  damage: 10
+  damage: 20
   maxHP: 100
   currentHP: 100

@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum BattleState{ START , PLAYERTURN, ENEMYTURN, WON, LOST}
+public enum BattleState{ START, PLAYERTURN, ENEMYTURN, WON, LOST, STANDBY}
 
-public class battleSystem : MonoBehaviour
+public class BattleSystem : MonoBehaviour
 {
+    public static BattleSystem instance;
+    public GameObject battlePanel;
+
     public GameObject playerPrefab;
     public GameObject enemyPrefab;
 
@@ -16,7 +19,9 @@ public class battleSystem : MonoBehaviour
     Unit playerUnit;
     Unit enemyUnit;
 
-    public Text dialogueText;
+    public GameObject dialogueField;
+    public GameObject buttonField;
+    private Text dialogueText;
 
     public BattleHUD playerHUD;
     public BattleHUD enemyHUD;
@@ -24,15 +29,28 @@ public class battleSystem : MonoBehaviour
     public  BattleState state;
 
 
+    private void Awake()
+    {
+        instance = this;
+    }
+
     void Start()
     {
-        state = BattleState.START;
+        state = BattleState.STANDBY;
+        dialogueText = dialogueField.transform.Find("Dialog").gameObject.GetComponent<Text>();
+    }
+
+    public void startBattle()
+    {
+        SpeachManager.instance.speechPanel.SetActive(false);
+        battlePanel.SetActive(true);
         StartCoroutine(SetupBattle());
-        
     }
 
     IEnumerator SetupBattle()
     {
+        buttonField.SetActive(false);
+        dialogueField.SetActive(true);
         GameObject playerGO = Instantiate(playerPrefab, playerBattleStation);
         playerUnit = playerGO.GetComponent<Unit>();
 
@@ -48,11 +66,12 @@ public class battleSystem : MonoBehaviour
 
         state = BattleState.PLAYERTURN;
         PlayerTurn();
-
     }
 
     IEnumerator PlayerAttack()
     {
+        buttonField.SetActive(false);
+        dialogueField.SetActive(true);
         bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
         
         enemyHUD.SetHP(enemyUnit.currentHP);
@@ -65,7 +84,8 @@ public class battleSystem : MonoBehaviour
             state = BattleState.WON;
             EndBattle();
 
-        }else
+        }
+        else
         {
             state = BattleState.ENEMYTURN;
             StartCoroutine(EnemyTurn());
@@ -74,6 +94,8 @@ public class battleSystem : MonoBehaviour
 
     IEnumerator EnemyTurn()
     {
+        buttonField.SetActive(false);
+        dialogueField.SetActive(true);
         dialogueText.text = enemyUnit.unitName + " attack!";
 
         yield return new WaitForSeconds(1F);
@@ -82,38 +104,52 @@ public class battleSystem : MonoBehaviour
 
         playerHUD.SetHP(playerUnit.currentHP);
 
-       yield return new WaitForSeconds(1F);
+        yield return new WaitForSeconds(1F);
 
-       if(isDead)
-       {
-           state = BattleState.LOST;
-           EndBattle();
-       }else
-       {
-           state = BattleState.PLAYERTURN;
-           PlayerTurn();
-       }
-        
+        if(isDead)
+        {
+            state = BattleState.LOST;
+            EndBattle();
+        }
+        else
+        {
+            state = BattleState.PLAYERTURN;
+            PlayerTurn();
+        }
     }
     void EndBattle()
     {
+        buttonField.SetActive(false);
+        dialogueField.SetActive(true);
         if(state == BattleState.WON)
         {
+            DialogManager.battleId = 0;
             dialogueText.text = "you won the battle";
-
-        }else if(state == BattleState.LOST)
-        {
-          dialogueText.text = "you were defeated";  
         }
+        else if(state == BattleState.LOST)
+        {
+            DialogManager.battleId = 1;
+            dialogueText.text = "you were defeated";  
+        }
+
+        battlePanel.SetActive(false);
+        SpeachManager.instance.speechPanel.SetActive(true);
+        DialogManager.instance.Say();
     }
 
     void PlayerTurn()
     {
+        buttonField.SetActive(false);
+        dialogueField.SetActive(true);
         dialogueText.text = "Choose an action:";
+        dialogueField.SetActive(false);
+        buttonField.SetActive(true);
     }
     
     IEnumerator PlayerHeal()
     {
+        buttonField.SetActive(false);
+        dialogueField.SetActive(true);
         playerUnit.Heal(5);
         
         playerHUD.SetHP(playerUnit.currentHP);
@@ -127,18 +163,18 @@ public class battleSystem : MonoBehaviour
     public void onAttackButton()
     {
         if(state !=BattleState.PLAYERTURN)
-           return;
+            return;
 
-           StartCoroutine(PlayerAttack());
+            StartCoroutine(PlayerAttack());
     }
 
 
     public void onHealButton()
     {
         if(state != BattleState.PLAYERTURN)
-           return;
+            return;
 
-           StartCoroutine(PlayerHeal());
+            StartCoroutine(PlayerHeal());
     }
 
 }

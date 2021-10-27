@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class DialogManager : MonoBehaviour
 {
+    public static DialogManager instance;
     public List<DialogIns> DialogList;
     public List<ChoiceIns> AnswerList;
 
     public static int answerId = -1;
+    public static int battleId = -1;
     int indexDialog = 0;
-    int indexDialogList = 0;
-    int indexDialogAnswer = 0;
+    [HideInInspector]public int indexDialogList = 0;
+    [HideInInspector]public int indexDialogAnswer = 0;
+    bool waitingForBattle = false;
     
     SpeachManager dialogue;
+
+    void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
         dialogue = SpeachManager.instance;
@@ -52,7 +60,13 @@ public class DialogManager : MonoBehaviour
                 AnswerManager.instance.answerPanel.SetActive(true);
             }
 
-            if(!dialogue.isSpeaking && !AnswerManager.instance.waitingForAnswer || dialogue.waitingInput && !AnswerManager.instance.waitingForAnswer)
+            if(waitingForBattle)
+            {
+                BattleSystem.instance.startBattle();
+                waitingForBattle = false;
+            }
+
+            if(!dialogue.isSpeaking && !AnswerManager.instance.waitingForAnswer && !waitingForBattle || dialogue.waitingInput && !AnswerManager.instance.waitingForAnswer && !waitingForBattle)
             {
                 if(indexDialog >= DialogList[indexDialogList].Dialog.Length)
                 {
@@ -61,6 +75,7 @@ public class DialogManager : MonoBehaviour
 
                 Say();
             }
+
         }
 
         if(AnswerManager.instance.waitingForAnswer)
@@ -69,7 +84,7 @@ public class DialogManager : MonoBehaviour
         }
     }
 
-    private void updateDialogue()
+    private void updateDialogueAnswer()
     {
         if(answerId == 0)
         {
@@ -92,11 +107,35 @@ public class DialogManager : MonoBehaviour
         indexDialog = 0;
         indexDialogAnswer++;
     }
+    private void updateDialogueBattle()
+    {
+        if(battleId == 0)
+        {
+            indexDialogList++;
+        }
+        else if(battleId == 1)
+        {
+            indexDialogList += 2;
+        }
+        else if(battleId == 2)
+        {
+            indexDialogList += 3;
+        }
+        else if(battleId == 3)
+        {
+            indexDialogList += 4;
+        }
+
+        battleId = -1;
+        indexDialog = 0;
+    }
     private string lastSpeaker = "";
     public void Say()
     {
         if(answerId != -1)
-            updateDialogue();
+            updateDialogueAnswer();
+        if(battleId != -1)
+            updateDialogueBattle();
         string[] parts = DialogList[indexDialogList].Dialog[indexDialog].Split(':');
         string speach = parts[0];
         string speaker = (parts.Length >= 2 && parts[1] != "") ? parts[1] : lastSpeaker;
@@ -117,11 +156,11 @@ public class DialogManager : MonoBehaviour
         {
             if(parts[3] == "true")
             {
-                //BATALHA
+                waitingForBattle = true;
             }
             else
             {
-                //NADA
+                waitingForBattle = false;
             }
         }
         if(lastSpeaker != speaker)
@@ -131,6 +170,5 @@ public class DialogManager : MonoBehaviour
 
         dialogue.Say(speach, speaker);
         indexDialog++;
-        Debug.Log(indexDialog);
     }
 }

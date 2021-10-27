@@ -68,4 +68,5 @@ public class SpeachManager : MonoBehaviour
         public Text speekerName{get{return elements.speekerName;}}
 #endregion
 
+
 }

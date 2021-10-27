@@ -87,6 +87,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: Pato
   unitLevel: 5
-  damage: 20
+  damage: 10
   maxHP: 50
   currentHP: 50

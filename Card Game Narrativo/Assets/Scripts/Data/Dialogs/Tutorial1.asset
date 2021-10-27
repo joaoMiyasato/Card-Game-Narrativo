@@ -26,4 +26,4 @@ MonoBehaviour:
   - "Voc\xEA possui muita habilidade e capacidade energ\xE9tica, mas ainda temos
     muito para refinar na sua magia.:Azarys"
   - "Agora escolha a pr\xF3xima transforma\xE7\xE3o, dessa vez faremos um pequeno
-    duelo.::true"
+    duelo.::false:true"
