@@ -18,8 +18,8 @@ public class CardsButton : MonoBehaviour
 
     public void buttonClicked()
     {
-        DeckManager.instance.currentCard = this.card;
-        DeckManager.instance.updateCurrentCard();
+        DeckManager.instance.updateCurrentCard(this.card);
         DeckManager.instance.hideCards();
+        DeckManager.instance.deckPanel.SetActive(false);
     }
 }

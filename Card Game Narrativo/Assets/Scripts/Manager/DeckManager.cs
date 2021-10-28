@@ -8,34 +8,26 @@ public class DeckManager : MonoBehaviour
     public static DeckManager instance;
 
     public GameObject deckPanel;
-    public CardIns currentCard = null;
+    public GameObject currentCardView;
 
     private void Awake()
     {
         instance = this;
     }
-    void Start()
+    public void updateCurrentCard(CardIns newCard)
     {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
-    public void updateCurrentCard()
-    {
-        deckPanel.transform.Find("Deck").gameObject.transform.Find("CardName").gameObject.GetComponent<Text>().text = currentCard.cardName;
-        deckPanel.transform.Find("Deck").gameObject.transform.Find("Damage").gameObject.GetComponent<Text>().text = currentCard.damage.ToString();
-        deckPanel.transform.Find("Deck").gameObject.transform.Find("Defense").gameObject.GetComponent<Text>().text = currentCard.defense.ToString();
+        currentCardView.transform.Find("CardName").gameObject.GetComponent<Text>().text = newCard.cardName;
+        currentCardView.transform.Find("Damage").gameObject.GetComponent<Text>().text = newCard.damage.ToString();
+        currentCardView.transform.Find("Defense").gameObject.GetComponent<Text>().text = newCard.defense.ToString();
     }
     public void showCards()
     {
+        deckPanel.SetActive(true);
         deckPanel.transform.Find("Cards").gameObject.SetActive(true);
     }
     public void hideCards()
     {
+        deckPanel.SetActive(false);
         deckPanel.transform.Find("Cards").gameObject.SetActive(false);
     }
 }

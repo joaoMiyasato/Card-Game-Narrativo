@@ -11,12 +11,4 @@ public class FlowchartManager : MonoBehaviour
     {
         instance = this;
     }
-    void Start()
-    {
-        
-    }
-    void Update()
-    {
-        
-    }
 }
