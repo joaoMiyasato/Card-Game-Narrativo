@@ -28,6 +28,14 @@ public class DialogManager : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            indexDialog = 0;
+            indexDialogAnswer = 0;
+            indexDialogList = 0;
+            Say();
+        }
+
         if(Input.GetKeyDown(KeyCode.Space))
         {
             if(AnswerManager.instance.waitingForAnswer)
@@ -161,6 +169,29 @@ public class DialogManager : MonoBehaviour
             else
             {
                 waitingForBattle = false;
+            }
+        }
+        if(parts.Length >= 5)
+        {
+            if(parts[4] == "1")
+            {
+                indexDialogList += 1;
+            }
+            else if(parts[4] == "2")
+            {
+                indexDialogList += 2;
+            }
+            else if(parts[4] == "3")
+            {
+                indexDialogList += 3;
+            }
+            else if(parts[4] == "4")
+            {
+                indexDialogList += 4;
+            }
+            else if(parts[4] == "5")
+            {
+                indexDialogList += 5;
             }
         }
         if(lastSpeaker != speaker)
