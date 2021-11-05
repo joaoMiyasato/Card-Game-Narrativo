@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 141}
-  m_SizeDelta: {x: 387.8074, y: 377.5304}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 500, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6523450455958808425
 CanvasRenderer:
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: f6e01c1f5fc85b74e9b3a45beb87f6ad, type: 3}
+  m_Texture: {fileID: 2800000, guid: 02f9594796d849b4cb2c4e18f8d0104d, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa2839f41ba2ef4ba04fcea8efee232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Eevee
+  unitName: Azarys
   unitLevel: 100
   damage: 20
   maxHP: 100

@@ -9,6 +9,7 @@ public class DeckManager : MonoBehaviour
 
     public GameObject deckPanel;
     public GameObject currentCardView;
+    public  CardIns currentCard;
 
     private void Awake()
     {
@@ -16,6 +17,7 @@ public class DeckManager : MonoBehaviour
     }
     public void updateCurrentCard(CardIns newCard)
     {
+        currentCard = newCard;
         currentCardView.transform.Find("CardName").gameObject.GetComponent<Text>().text = newCard.cardName;
         currentCardView.transform.Find("Damage").gameObject.GetComponent<Text>().text = newCard.damage.ToString();
         currentCardView.transform.Find("Defense").gameObject.GetComponent<Text>().text = newCard.defense.ToString();

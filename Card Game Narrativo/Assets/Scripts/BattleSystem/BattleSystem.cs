@@ -51,10 +51,11 @@ public class BattleSystem : MonoBehaviour
     {
         buttonField.SetActive(false);
         dialogueField.SetActive(true);
+
         GameObject playerGO = Instantiate(playerPrefab, playerBattleStation);
         playerUnit = playerGO.GetComponent<Unit>();
 
-        GameObject enemyGO = Instantiate(enemyPrefab, playerBattleStation);
+        GameObject enemyGO = Instantiate(enemyPrefab, enemyBattleStation);
         enemyUnit = enemyGO.GetComponent<Unit>();
 
         dialogueText.text = " a wild " + enemyUnit.unitName + "approaches...";
