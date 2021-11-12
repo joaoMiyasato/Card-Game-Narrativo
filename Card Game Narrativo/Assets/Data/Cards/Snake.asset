@@ -15,5 +15,5 @@ MonoBehaviour:
   ID: 2
   cardName: Cobra
   description: Tem uma cobra na minha bota
-  damage: 10
+  damage: 15
   defense: 2

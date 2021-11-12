@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e92c14aa340ded4b8b36641fe09b30a, type: 3}
+  m_Name: PC 13
+  m_EditorClassIdentifier: 
+  type: 1
+  Dialog:
+  - "Voc\xEA chega na biblioteca e \xE9 recebido pelo bibliotec\xE1rio.:Narrador"
+  - "Posso ajudar em algo?:Bibliotec\xE1rio"
+  - "Fui informado de que houve uma invas\xE3o \xE0 biblioteca. E de que alguns guardas
+    suspeitam de ILLANA, minha aprendiz.:Azarys"
+  - "Ah, sim. Soldados me informaram que ela foi vista deixando a capital e que depois
+    se descobriu que ela havia fugido.:Bibliotec\xE1rio"
+  - "N\xE3o pude deixar de conectar os pontos."
+  - "Nada foi quebrado para entrar na biblioteca, ent\xE3o suspeito que ela tenha
+    se transformado em um animal pequeno para entrar pelo por\xE3o ou se infiltrar
+    pelo telhado."
+  - E algo foi roubado?:Azarys
+  - "Suspeito que sim.:Bibliotec\xE1rio"
+  - "Ainda n\xE3o consegui identificar o item, mas a porta do arquivo especial n\xE3o
+    estava bem fechada."
+  - E eu conferi ontem antes de deixar a biblioteca.
+  - "E h\xE1 indic\xEDos de como o invasor deixou o local carregando o fruto do roubo?:Azarys"
+  - "A porta lateral estava aberta, e o molho reserva de chaves estava pendurado
+    por dentro.:Bibliotec\xE1rio"
+  - "Ele era guardado em meu gabinete e cont\xE9m a chave para o arquivo especial."
+  - "A fuga parece de uma pessoa comum. O molho n\xE3o poderia ter sido roubado antes
+    de voc\xEA trancar a biblioteca ontem?:Azarys"
+  - "Eu tamb\xE9m conferi isso antes de partir.:Bibliotec\xE1rio"
+  - Se me der algum tempo, posso descobrir o que foi roubado.::pergunta::3

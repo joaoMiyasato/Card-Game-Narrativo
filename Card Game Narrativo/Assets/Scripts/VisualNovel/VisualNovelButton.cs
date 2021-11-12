@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class VisualNovelButton : MonoBehaviour
 {
-    public int buttonId;
+    public int jumpIndex;
     public void setAnswerId()
     {
-        DialogManager.answerId = buttonId;
+        DialogManager.instance.setDialogList(jumpIndex);
+        DialogManager.instance.indexDialog = 0;
         AnswerManager.instance.answerPanel.SetActive(false);
-        AnswerManager.instance.waitingForAnswer = false;
+        AnswerManager.instance.inAnswer = false;
+
+        DialogManager.instance.Say();
     }
 }

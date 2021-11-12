@@ -2290,6 +2290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deckPanel: {fileID: 996019198}
   currentCardView: {fileID: 1769805250}
+  currentCard: {fileID: 11400000, guid: a48e5ada30071304283d1c0544bbe53a, type: 2}
 --- !u!114 &483805819
 MonoBehaviour:
   m_ObjectHideFlags: 0

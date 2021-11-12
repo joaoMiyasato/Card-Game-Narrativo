@@ -28,6 +28,8 @@ public class BattleSystem : MonoBehaviour
 
     public  BattleState state;
 
+    [HideInInspector]public bool inBattle;
+
 
     private void Awake()
     {
@@ -42,6 +44,7 @@ public class BattleSystem : MonoBehaviour
 
     public void startBattle()
     {
+        inBattle = true;
         SpeachManager.instance.speechPanel.SetActive(false);
         battlePanel.SetActive(true);
         StartCoroutine(SetupBattle());
@@ -63,7 +66,7 @@ public class BattleSystem : MonoBehaviour
         playerHUD.SetHUD(playerUnit);
         enemyHUD.SetHUD(enemyUnit);
 
-        yield return new WaitForSeconds (2f);
+        yield return new WaitForSeconds (0.5f);
 
         state = BattleState.PLAYERTURN;
         PlayerTurn();
@@ -78,7 +81,7 @@ public class BattleSystem : MonoBehaviour
         enemyHUD.SetHP(enemyUnit.currentHP);
         dialogueText.text = " the attack is successful";
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
 
         if(isDead)
         {
@@ -99,13 +102,13 @@ public class BattleSystem : MonoBehaviour
         dialogueField.SetActive(true);
         dialogueText.text = enemyUnit.unitName + " attack!";
 
-        yield return new WaitForSeconds(1F);
+        yield return new WaitForSeconds(0.5F);
 
         bool isDead = playerUnit.TakeDamage(enemyUnit.damage);
 
         playerHUD.SetHP(playerUnit.currentHP);
 
-        yield return new WaitForSeconds(1F);
+        yield return new WaitForSeconds(0.5F);
 
         if(isDead)
         {
@@ -120,16 +123,17 @@ public class BattleSystem : MonoBehaviour
     }
     void EndBattle()
     {
+        inBattle = false;
         buttonField.SetActive(false);
         dialogueField.SetActive(true);
         if(state == BattleState.WON)
         {
-            DialogManager.battleId = 0;
+            DialogManager.instance.setDialogList(2);
             dialogueText.text = "you won the battle";
         }
         else if(state == BattleState.LOST)
         {
-            DialogManager.battleId = 1;
+            DialogManager.instance.setDialogList(2);
             dialogueText.text = "you were defeated";  
         }
 

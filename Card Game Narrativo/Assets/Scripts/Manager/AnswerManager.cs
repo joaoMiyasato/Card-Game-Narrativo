@@ -6,9 +6,8 @@ using UnityEngine.UI;
 public class AnswerManager : MonoBehaviour
 {
     public static AnswerManager instance;
+    [HideInInspector]public bool inAnswer;
     public ELEMENTS elements;
-    public bool waitingForAnswer = false;
-    // [HideInInspector] public int answerId = -1;
 
     private void Awake()
     {
@@ -16,37 +15,34 @@ public class AnswerManager : MonoBehaviour
     }
 
 #region setAnswers
-    public void setAnswers(string a)
+
+    public void newSetAnswers(string[] a)
     {
-        buttons[0].GetComponentInChildren<Text>().text = a;
-    }
-    public void setAnswers(string a, string b)
-    {
-        buttons[0].GetComponentInChildren<Text>().text = a;
-        buttons[1].GetComponentInChildren<Text>().text = b;
-    }
-    public void setAnswers(string a, string b, string c)
-    {
-        buttons[0].GetComponentInChildren<Text>().text = a;
-        buttons[1].GetComponentInChildren<Text>().text = b;
-        buttons[2].GetComponentInChildren<Text>().text = c;
-    }
-    public void setAnswers(string a, string b, string c, string d)
-    {
-        buttons[0].GetComponentInChildren<Text>().text = a;
-        buttons[1].GetComponentInChildren<Text>().text = b;
-        buttons[2].GetComponentInChildren<Text>().text = c;
-        buttons[3].GetComponentInChildren<Text>().text = d;
-    }
-    public void setNumberOfAnswers(int n)
-    {
-        for (int i = 0; i < buttons.Length; i++)
+        //1 fala, 2 pra onde vai, 3 precisa de carta
+        for (int i = 0; i < 3; i++)
         {
             buttons[i].SetActive(false);
+            buttons[i].transform.Find("NeedCard").gameObject.SetActive(false);
         }
 
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < a.Length; i++)
         {
+            string[] part = a[i].Split(':');
+            buttons[i].GetComponentInChildren<Text>().text = part[0];
+            if(part.Length >= 2)
+            {
+                if(part[1] != "")
+                {
+                    buttons[i].gameObject.GetComponent<VisualNovelButton>().jumpIndex = int.Parse(part[1]);
+                }
+            }
+            if(part.Length >= 3)
+            {
+                if(part[2] != "")
+                {
+                    buttons[i].transform.Find("NeedCard").gameObject.SetActive(true);
+                }
+            }
             buttons[i].SetActive(true);
         }
     }
