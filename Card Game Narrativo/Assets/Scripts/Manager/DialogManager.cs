@@ -12,6 +12,7 @@ public class DialogManager : MonoBehaviour
     [HideInInspector]public int indexDialog = 0;
     [HideInInspector]public int indexDialogList = 0;
     [HideInInspector]public int indexDialogAnswer = 0;
+    [HideInInspector]public DialogIns currendDialog;
 
     bool waitingForBattle = false;
     
@@ -31,6 +32,7 @@ public class DialogManager : MonoBehaviour
     }
     void Update()
     {
+        currendDialog = DialogList[indexDialogList];
         if(Input.GetKeyDown(KeyCode.R))
         {
             indexDialog = 0;
@@ -136,6 +138,7 @@ public class DialogManager : MonoBehaviour
     {
         indexDialog = 0;
         indexDialogList = i;
+        NodeManager.instance.updateNode();
     }
 
     public void setDialogAnswer(int i)
