@@ -4,25 +4,14 @@ using UnityEngine;
 
 public class FlowchartButton : MonoBehaviour
 {
-    public void showView()
-    {
-        FlowchartManager.instance.flowchartPanel.SetActive(true);
-        FlowchartManager.instance.flowchartPanel.transform.Find("View").gameObject.SetActive(true);
-    }
-
-    public void hideView()
-    {
-        FlowchartManager.instance.flowchartPanel.SetActive(false);
-        FlowchartManager.instance.flowchartPanel.transform.Find("View").gameObject.SetActive(false);
-        FlowchartManager.instance.flowchartPanel.transform.Find("Flowchart").gameObject.SetActive(false);
-    }
-    
     public void showFlowchart()
     {
+        FlowchartManager.instance.flowchartPanel.SetActive(true);
         FlowchartManager.instance.flowchartPanel.transform.Find("Flowchart").gameObject.SetActive(true);
     }
     public void hideFlochart()
     {
+        FlowchartManager.instance.flowchartPanel.SetActive(false);
         FlowchartManager.instance.flowchartPanel.transform.Find("Flowchart").gameObject.SetActive(false);
     }
 }

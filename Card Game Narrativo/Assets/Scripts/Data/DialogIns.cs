@@ -7,6 +7,8 @@ public class DialogIns : DialogObj
 {
     [TextArea(5,10)]
     public string[] Dialog;
+
+    public bool alreadySpoke;
     private void Awake()
     {
         type = DialogType.Dialog;

@@ -10,7 +10,8 @@ public class UIZoomImage : MonoBehaviour, IScrollHandler
     [SerializeField]
     private float zoomSpeed = 0.1f;
     [SerializeField]
-    private float maxZoom = 10f;
+    private float maxZoom = 3f;
+
 
     private void Awake()
     {
@@ -34,8 +35,16 @@ public class UIZoomImage : MonoBehaviour, IScrollHandler
         return desiredScale;
     }
 
+    public void clampToNode()
+    {
+        transform.localScale = new Vector3(2, 2, 2);
+        
+        transform.position = NodeManager.instance.searchNode().GetComponent<NodoName>().part.position;
+    }
+
     public void resetImage()
     {
         transform.localScale = initialScale;
+        transform.position = new Vector3(0,0,0);
     }
 }

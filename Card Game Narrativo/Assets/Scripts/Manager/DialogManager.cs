@@ -79,6 +79,7 @@ public class DialogManager : MonoBehaviour
     private string lastSpeaker = "";
     public void Say()
     {
+        DialogList[indexDialogList].alreadySpoke = true;
         //0 Fala, 1 Nome, 2 o quê, 3 ir pra dialogo, 4 ir para pergunta, 5 animação
         string[] parts = DialogList[indexDialogList].Dialog[indexDialog].Split(':');
         string speech = parts[0];
@@ -138,7 +139,6 @@ public class DialogManager : MonoBehaviour
     {
         indexDialog = 0;
         indexDialogList = i;
-        NodeManager.instance.updateNode();
     }
 
     public void setDialogAnswer(int i)
@@ -169,6 +169,14 @@ public class DialogManager : MonoBehaviour
         {
             anim.SetTrigger(curAnim);
             startAnim = false;
+        }
+    }
+
+    private void OnApplicationQuit()
+    {
+        for (int i = 0; i < DialogList.Count; i++)
+        {
+            DialogList[i].alreadySpoke = false;
         }
     }
 }

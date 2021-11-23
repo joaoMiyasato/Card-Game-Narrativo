@@ -6,46 +6,25 @@ using UnityEngine.UI;
 public class NodeManager : MonoBehaviour
 {
     public static NodeManager instance;
-
-    [HideInInspector]public bool[] nodesBool;
     public GameObject[] nodes;
+
+    private GameObject lastNode = null;
 
     private void Awake()
     {
         instance = this;
     }
-    private void Start()
+
+    public GameObject searchNode()
     {
-        nodesBool = new bool[60];
-    }
-    public void updateNode()
-    {
-        for (int i = 0; i < nodesBool.Length; i++)
+        for (int i = 0; i < nodes.Length; i++)
         {
-            string dialog = "PC "+i;
-
-            if(DialogManager.instance.currendDialog.name == dialog)
+            if(DialogManager.instance.currendDialog == nodes[i].GetComponent<NodoName>().nodeDialog)
             {
-                nodesBool[i] = true;
-            }
-
-            for (int j = 0; j < nodes.Length; j++)
-            {
-                string[] parts = nodes[j].name.Split('(', ')');
-                if(int.Parse(parts[1]) == i && nodesBool[i] == true)
-                {
-                    nodes[j].GetComponent<Image>().color = Color.white;
-                    nodes[j].transform.Find("Text").gameObject.SetActive(true);
-                    nodes[j].transform.Find("Arrows").gameObject.SetActive(true);
-                }
-                else if(int.Parse(parts[1]) == i && nodesBool[i] == false)
-                {
-                    nodes[j].GetComponent<Image>().color = Color.gray;
-                    nodes[j].transform.Find("Text").gameObject.SetActive(false);
-                    nodes[j].transform.Find("Arrows").gameObject.SetActive(false);
-                }
+                lastNode = nodes[i];
+                return lastNode;
             }
         }
-
+        return lastNode;
     }
 }
