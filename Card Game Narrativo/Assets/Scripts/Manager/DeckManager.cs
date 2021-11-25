@@ -48,8 +48,8 @@ public class DeckManager : MonoBehaviour
     {
         currentCard = newCard;
         currentCardView.transform.Find("CardName").gameObject.GetComponent<Text>().text = newCard.cardName;
-        currentCardView.transform.Find("Damage").gameObject.GetComponent<Text>().text = newCard.damage.ToString();
-        currentCardView.transform.Find("Defense").gameObject.GetComponent<Text>().text = newCard.defense.ToString();
+        currentCardView.transform.Find("Damage").gameObject.transform.Find("TextN").GetComponent<Text>().text = newCard.damage.ToString();
+        currentCardView.transform.Find("Defense").gameObject.transform.Find("TextN").GetComponent<Text>().text = newCard.defense.ToString();
     }
     public void showCards()
     {

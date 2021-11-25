@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class DialogManager : MonoBehaviour
     public List<DialogIns> DialogList;
     public List<ChoiceIns> ChoiceList;
     public Animator anim;
+    public GameObject speakerOther;
+    public Sprite[] NPCs;
 
     [HideInInspector]public int indexDialog = 0;
     [HideInInspector]public int indexDialogList = 0;
@@ -121,6 +124,22 @@ public class DialogManager : MonoBehaviour
         if(lastSpeaker != speaker)
         {
             lastSpeaker = speaker;
+        }
+
+        if(lastSpeaker == "Azarys")
+        {
+            speakerOther.gameObject.SetActive(false);
+            dialogue.speechPanel.transform.Find("DialogBox").gameObject.transform.Find("Image").transform.localScale = new Vector3(-1,1,1);
+        }
+        else
+        {
+            dialogue.speechPanel.transform.Find("DialogBox").gameObject.transform.Find("Image").transform.localScale = new Vector3(1,1,1);
+            if(lastSpeaker == "Illana")
+            {
+                speakerOther.gameObject.SetActive(true);
+                speakerOther.GetComponent<Image>().color = new Color32(255,255,255,255);
+                speakerOther.GetComponent<Image>().sprite = NPCs[0];
+            }
         }
 
         dialogue.Say(speech, speaker);

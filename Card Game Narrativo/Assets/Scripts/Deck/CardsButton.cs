@@ -14,8 +14,8 @@ public class CardsButton : MonoBehaviour
         {
             this.transform.Find("CardName").gameObject.GetComponent<Text>().text = card.cardName;
             this.transform.Find("Description").gameObject.GetComponent<Text>().text = card.description;
-            this.transform.Find("Damage").gameObject.GetComponent<Text>().text = card.damage.ToString();
-            this.transform.Find("Defense").gameObject.GetComponent<Text>().text = card.defense.ToString();
+            this.transform.Find("Damage").gameObject.transform.Find("TextN").GetComponent<Text>().text = card.damage.ToString();
+            this.transform.Find("Defense").gameObject.transform.Find("TextN").GetComponent<Text>().text = card.defense.ToString();
         }
     }
 
