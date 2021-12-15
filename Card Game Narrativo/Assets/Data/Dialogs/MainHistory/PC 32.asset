@@ -14,5 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - "Assim que voc\xEA deixa a mata, um lenhador se aproxima enquanto os demais seguem
+    trabalhando.:Narrador"
+  - "Quem \xE9 voc\xEA?:Lenhador L\xEDder"
+  - Sou AZARYS, um mago imperial. :Azarys
+  - "Busco informa\xE7\xF5es. Voc\xEAs viram uma jovem passar por aqui? "
+  - "Nenhuma:Lenhador L\xEDder"
+  - "E um animal? Ela \xE9 uma maga, pode se transformar.:Azarys"
+  - "Agora que voc\xEA falou, talvez eu tenha visto algo. :Lenhador L\xEDder"
+  - "Quando cheguei na clareira, tive a impress\xE3o de ter visto um lobo correr
+    na dire\xE7\xE3o norte. "
+  - Isso ajuda?
+  - Sim. Ela se transformar em algum animal explica eu ter perdido o seu rastro.:Azarys
+  - "Deixe para l\xE1. Muito obrigado.::pergunta"
+  Background: {fileID: 0}
   alreadySpoke: 0

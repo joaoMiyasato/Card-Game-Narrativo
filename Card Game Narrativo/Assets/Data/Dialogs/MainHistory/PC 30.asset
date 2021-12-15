@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - "Transformado, voc\xEA est\xE1 se aproximando de uma clareira em que lenhadores
+    trabalham quando o rastro olfativo se extingue. :Narrador"
+  - "Os homens ainda n\xE3o o viram na mata.::pergunta"
+  Background: {fileID: 0}
   alreadySpoke: 0

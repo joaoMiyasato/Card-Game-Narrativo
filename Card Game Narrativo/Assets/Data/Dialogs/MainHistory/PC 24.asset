@@ -14,5 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - "Voc\xEA e os soldados venceram os bandidos sem qualquer baixa. Apenas alguns
+    feridos sem gravidade.:Narrador"
+  - "Voc\xEA se destransforma para conversar com o oficial."
+  - "Muito obrigado por seu aux\xEDlio, AZARYS! :Oficial"
+  - "Eu e meus homens entoaremos o seu nome como o grande mago que \xE9! "
+  - "N\xE3o foi inc\xF4modo algum. Agora devo partir, preciso retomar a minha miss\xE3o.:Azarys"
+  - "Claro! Acompanharemos voc\xEA at\xE9 o posto da guarda na estrada. De l\xE1,
+    retornaremos \xE0 capital. :Oficial"
+  Background: {fileID: 0}
   alreadySpoke: 0

@@ -14,5 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - "Seguindo as indica\xE7\xF5es dadas, voc\xEA logo encontra a biblioteca de Campo
+    Verde. :Narrador"
+  - "O respons\xE1vel pelo local diz que n\xE3o notou nada de estranho e avisa que
+    n\xE3o h\xE1 itens ou arquivos realmente antigos ali. "
+  - "Voc\xEA permanece observando as ruas por um tempo, mas depois cede ao cansa\xE7o
+    e procura por uma hospedaria para passar a noite. "
+  Background: {fileID: 0}
   alreadySpoke: 0

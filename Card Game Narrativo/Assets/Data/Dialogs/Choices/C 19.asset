@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   Answer:
-  - "Se transformar e participar do combate.(N\xC3O IMPLEMENTADO)"
-  - "Manter dist\xE2ncia enquanto os soldados lidam com os bandidos.(N\xC3O IMPLEMENTADO)"
+  - Se transformar e participar do combate.
+  - "Manter dist\xE2ncia enquanto os soldados lidam com os bandidos."

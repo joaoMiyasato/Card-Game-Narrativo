@@ -14,5 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - "Voc\xEA se destransforma, e os lenhadores baixam as armas.:Narrador"
+  - "Voc\xEA \xE9 um mago. Por que nos assustar assim?:Lenhador L\xEDder"
+  - Sinto muito pelo susto. :Azarys
+  - "Apenas procuro uma jovem que deve ter passado por aqui. Voc\xEAs viram algo?"
+  - "Pensei que magos n\xE3o precisassem de pessoas comuns para nada. De qualquer
+    forma, n\xE3o vimos.:Lenhador L\xEDder"
+  - Ela poderia estar transformada em algum animal.:Azarys
+  - "Ningu\xE9m viu nada. Que os deuses o acompanhem, mago.:Lenhador L\xEDder"
+  - Digo o mesmo. :Azarys
+  Background: {fileID: 0}
   alreadySpoke: 0

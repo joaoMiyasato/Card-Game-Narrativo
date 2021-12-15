@@ -14,5 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - "Ao chegarem no posto da guarda, os soldados que o acompanham compartilham com
+    todos os presentes a import\xE2ncia de seu aux\xEDlio no combate aos bandidos.:Narrador"
+  - "Voc\xEA \xE9 parabenizado por todos. "
+  - "Assim que os homens da capital se despedem, alguns soldados do posto fazem quest\xE3o
+    de escolt\xE1-lo at\xE9 o vilarejo de Campo Verde, em especial pela proximidade
+    do entardecer. "
+  Background: {fileID: 0}
   alreadySpoke: 0

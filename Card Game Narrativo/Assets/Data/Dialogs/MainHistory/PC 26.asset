@@ -14,5 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - Assim que chegam ao vilarejo de Campo Verde, os soldados em sua companhia comentam
+    com a guarda do vilarejo sobre a sua boa vontade em ajudar contra os criminosos.
+    :Narrador
+  - Assim que eles partem, um oficial o conduz para dentro dos muros do local.
+  - "\xC9 muito bom quando um mago lembra daqueles abaixo dele e ajuda na manuten\xE7\xE3o
+    da lei no imp\xE9rio. :Oficial"
+  - "Como voc\xEA nos ajudou, eu gostaria de ajud\xE1-lo. "
+  - "Uma ave chegou avisando sobre a sua miss\xE3o, mas ningu\xE9m na guarda viu
+    a sua aprendiz. "
+  - "O que voc\xEA pretende fazer? Conte comigo.::pergunta"
+  Background: {fileID: 0}
   alreadySpoke: 0

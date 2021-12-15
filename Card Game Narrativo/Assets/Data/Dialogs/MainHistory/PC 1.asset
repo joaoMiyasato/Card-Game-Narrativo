@@ -26,3 +26,5 @@ MonoBehaviour:
     muito para refinar na sua magia.:Azarys"
   - "Agora escolha a pr\xF3xima transforma\xE7\xE3o, dessa vez faremos um pequeno
     duelo.:::1"
+  Background: {fileID: 0}
+  alreadySpoke: 0

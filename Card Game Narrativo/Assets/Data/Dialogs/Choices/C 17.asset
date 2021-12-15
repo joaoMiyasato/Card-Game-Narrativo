@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   Answer:
-  - "Auxiliar os soldados no combate. (N\xC3O IMPLEMENTADO)"
-  - "Permanecer recuado enquanto os soldados lidam com os bandidos.(N\xC3O IMPLEMENTADO)"
+  - Auxiliar os soldados no combate.
+  - Permanecer recuado enquanto os soldados lidam com os bandidos.

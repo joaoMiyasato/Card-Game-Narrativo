@@ -14,5 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - "Pouco ap\xF3s seu aviso aos guardas sobre a presen\xE7a de DEFYZA nos arredores
+    do vilarejo, o bar\xE3o de Campo Verde o encontra nas proximidades do port\xE3o.:Narrador"
+  - "AZARYS! J\xE1 faz algum tempo que n\xE3o nos vemos. :Bar\xE3o"
+  - "\xC9 uma pena que nosso reencontro traga not\xEDcias t\xE3o preocupantes. "
+  - 'Meus soldados me avisaram sobre a maga corrupta. '
+  - "Voc\xEA precisou combat\xEA-la? Como voc\xEA a descobriu? Conte-me tudo.::pergunta"
+  Background: {fileID: 0}
   alreadySpoke: 0

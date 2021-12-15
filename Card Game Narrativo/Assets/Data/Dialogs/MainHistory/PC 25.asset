@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - Ao chegarem no posto da guarda na estrada, o oficial e seus soldados contam a
+    todos sobre a sua ajuda e sobre o combate. :Narrador
+  - "O grupo retorna \xE0 capital, mas outros soldados insistem em carreg\xE1-lo
+    ferido at\xE9 o vilarejo de Campo Verde, onde poder\xE1 descansar at\xE9 se curar. "
+  Background: {fileID: 0}
   alreadySpoke: 0

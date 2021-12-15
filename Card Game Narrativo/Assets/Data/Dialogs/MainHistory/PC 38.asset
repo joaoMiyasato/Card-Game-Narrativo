@@ -14,5 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - "Voc\xEA consegue fugir da matilha. :Narrador"
+  - "Na verdade, eles nem pareciam com tanta vontade de ca\xE7\xE1-lo. "
+  - 'Quando sai da floresta e entra em uma campina, um vilarejo surge no horizonte. '
+  - "Com o final da tarde pr\xF3ximo, voc\xEA julga que o vilarejo \xE9 um bom lugar
+    para passar a noite. "
+  Background: {fileID: 0}
   alreadySpoke: 0

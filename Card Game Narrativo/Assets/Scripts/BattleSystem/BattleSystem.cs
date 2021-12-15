@@ -50,6 +50,8 @@ public class BattleSystem : MonoBehaviour
         StartCoroutine(SetupBattle());
     }
 
+    //SetubBattle(int xx, int yy)
+    //if won xx, if lose yy
     IEnumerator SetupBattle()
     {
         buttonField.SetActive(false);

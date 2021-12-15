@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: B 20
   m_EditorClassIdentifier: 
   type: 1
-  Dialog: []
+  Dialog:
+  - ::batalha
+  Background: {fileID: 0}
+  alreadySpoke: 0

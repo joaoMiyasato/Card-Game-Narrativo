@@ -83,7 +83,7 @@ public class DialogManager : MonoBehaviour
     public void Say()
     {
         DialogList[indexDialogList].alreadySpoke = true;
-        //0 Fala, 1 Nome, 2 o quê, 3 ir pra dialogo, 4 ir para pergunta, 5 animação
+        //0 Fala, 1 Nome, 2 o quê, 3 ir pra dialogo, 4 ir para pergunta, 5 animação, 6 e 7 batalha
         string[] parts = DialogList[indexDialogList].Dialog[indexDialog].Split(':');
         string speech = parts[0];
         string speaker = (parts.Length >= 2 && parts[1] != "") ? parts[1] : lastSpeaker;
@@ -121,6 +121,14 @@ public class DialogManager : MonoBehaviour
                 activateAnimation(int.Parse(parts[5]));
             }   
         }
+        if(parts.Length >= 8)
+        {
+            if(parts[2] == "batalha")
+            {
+                //BattleSystem.instance.startBattle(int.Parse(parts[6]), int.Parse(parts[7]));
+            }
+        }
+
         if(lastSpeaker != speaker)
         {
             lastSpeaker = speaker;

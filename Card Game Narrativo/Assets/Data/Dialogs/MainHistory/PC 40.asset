@@ -14,5 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - "Ao chegar no vilarejo de Campo Verde, voc\xEA caminha at\xE9 o oficial respons\xE1vel
+    pelo port\xE3o sul.:Narrador"
+  - "Meu nome \xE9 AZARYS. Imagino que voc\xEAs tenham recebido um aviso imperial
+    sobre a minha miss\xE3o.:Azarys"
+  - "Sim, recebemos. Infelizmente, nada sabemos sobre a sua aprendiz. Posso ajud\xE1-lo
+    em algo mais?:Oficial:pergunta"
+  Background: {fileID: 0}
   alreadySpoke: 0

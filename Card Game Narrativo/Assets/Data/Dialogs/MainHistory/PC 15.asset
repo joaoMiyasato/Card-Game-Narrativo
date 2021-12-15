@@ -14,4 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - "Ap\xF3s algum tempo caminhando, voc\xEA se aproxima de um posto da guarda na
+    estrada, que segue para norte. Um oficial o recebe.:Narrador"
+  - Mago AZARYS?:Oficial
+  - Como sabe quem sou?:Azarys
+  - "Recebemos uma ave do comando imperial avisando sobre a sua miss\xE3o. :Oficial"
+  - "Buscas est\xE3o sendo realizadas, mas, at\xE9 agora, ningu\xE9m viu ILLANA.
+    Sinto muito n\xE3o podermos ajudar. "
+  - Talvez em Campo Verde eles tenham descoberto algo.
+  - "Seguirei meu caminho, ent\xE3o. Obrigado.:Azarys"
+  Background: {fileID: 0}
+  alreadySpoke: 0

@@ -14,5 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - "Apesar de voc\xEA ter sido ferido e derrotado, os soldados venceram os bandidos
+    com algumas baixas.:Narrador"
+  - "Sem d\xFAvida teria sido pior sem a sua ajuda."
+  - "Em agradecimento, o oficial e seus homens restantes o carregam at\xE9 o posto
+    mais pr\xF3ximo da guarda. "
+  Background: {fileID: 0}
   alreadySpoke: 0

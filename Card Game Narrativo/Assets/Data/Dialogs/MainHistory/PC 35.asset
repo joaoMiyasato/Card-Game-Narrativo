@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - "Ap\xF3s algum tempo de caminhada, voc\xEA se depara com uma matilha de lobos.
+    Eles come\xE7am a cerc\xE1-lo.:Narrador:pergunta"
+  Background: {fileID: 0}
   alreadySpoke: 0

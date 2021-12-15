@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - "Os lenhadores levam um susto quando voc\xEA deixa a mata na dire\xE7\xE3o da
+    clareira. :Narrador"
+  - "Alguns correm, outros empunham seus machados.:Lenhador L\xEDder"
+  - Cerquem ele! Cerquem ele!::pergunta
+  Background: {fileID: 0}
   alreadySpoke: 0

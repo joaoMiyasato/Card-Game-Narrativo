@@ -14,5 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - "O bibliotec\xE1rio quase n\xE3o demora para retornar do arquivo especial.:Narrador"
+  - "Trata-se de um mapa da metade norte do imp\xE9rio, a partir da capital. :Bibliotec\xE1rio"
+  - "Ele possui marca\xE7\xF5es sobre a localiza\xE7\xE3o de itens antigos e hist\xF3ricos."
+  - "E o que seriam esses itens? Por que algu\xE9m teria interesse em roubar o mapa?:Azarys"
+  - "N\xE3o sei dizer. Podem ser antiguidades nunca movidas para a capital ou relatos
+    de guerras. :Bibliotec\xE1rio"
+  - Qualquer coisa, na verdade.
+  - "E existe uma c\xF3pia do conte\xFAdo do mapa roubado? :Azarys"
+  - Se realmente foi ILLANA quem roubou, seria um indicativo de seu destino.
+  - "N\xE3o sei informar. :Bibliotec\xE1rio"
+  - "S\xF3 consegui identificar o item pelo registro numeral do acervo. "
+  - "Quem possui mais conhecimento dos arquivos especiais das bibliotecas da capital
+    \xE9 o imperador, al\xE9m de seu bibliotec\xE1rio-mor. "
+  - "Talvez voc\xEA possa perguntar a algum deles.::pergunta"
+  Background: {fileID: 0}
   alreadySpoke: 0

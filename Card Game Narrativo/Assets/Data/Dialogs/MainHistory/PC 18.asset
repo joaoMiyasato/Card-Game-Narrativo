@@ -18,4 +18,6 @@ MonoBehaviour:
     os bandidos.:Narrador"
   - "Agrade\xE7o por sua ajuda, AZARYS. Aqui nos despedimos.:Oficial"
   - Mais adiante na estrada existe um posto da guarda.
-  - "Espero que consiga cumprir a sua miss\xE3o.(N\xC3O IMPLEMENTADO)"
+  - "Espero que consiga cumprir a sua miss\xE3o."
+  Background: {fileID: 0}
+  alreadySpoke: 0

@@ -14,5 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - Os soldados vencem os bandidos, mas sofrem baixas significativas.:Narrador
+  - "Voc\xEA deveria ter ajudado. :Oficial"
+  - "Vidas poderiam ter sido salvas se n\xE3o fosse por sua covardia. "
+  - "Creio que \xE9 o momento de nos separarmos. Siga a dire\xE7\xE3o norte para
+    encontrar a estrada. "
+  - 'Boa sorte. '
+  Background: {fileID: 0}
   alreadySpoke: 0

@@ -7,9 +7,15 @@ public class SpeachManager : MonoBehaviour
 {
     public static SpeachManager instance;
     public ELEMENTS elements;
+    public Texture2D cursor;
     void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
+        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.ForceSoftware);
     }
 
     public void Say(string speech, string speeker)

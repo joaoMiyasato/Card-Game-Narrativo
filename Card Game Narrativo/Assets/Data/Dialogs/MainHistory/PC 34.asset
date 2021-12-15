@@ -14,5 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   Dialog:
-  - 
+  - "Ainda transformado, voc\xEA alcan\xE7a as proximidades de um posto da guarda.
+    :Narrador"
+  - "Assim que o avistam, alguns dos homens gritam a presen\xE7a de um animal. "
+  - "Em instantes voc\xEA \xE9 cercado. Ent\xE3o um oficial percebe que voc\xEA n\xE3o
+    parece reagir."
+  - Esperem! Esse animal parece estranho. :Oficial
+  - "Pode ser um mago. Se voc\xEA \xE9 um mago, destransforme-se. Do contr\xE1rio,
+    atacaremos."
+  - "Voc\xEA se destransforma, e todos os soldados parecem descontentes pelo susto.:Narrador"
+  - "Voc\xEA deve ser AZARYS. :Oficial"
+  - Sim, sou eu.:Azarys
+  - "Recebemos not\xEDcias sobre a sua miss\xE3o. :Oficial"
+  - "Apenas tente n\xE3o nos assustar na pr\xF3xima vez."
+  - "Tentarei. Voc\xEAs possuem informa\xE7\xF5es sobre o paradeiro de ILLANA?:Azarys"
+  - Sinto muito, nada foi visto ou ouvido por aqui. :Oficial
+  - "Quem sabe voc\xEA encontre mais sorte em Campo Verde."
+  - "Agrade\xE7o. \xC9 para l\xE1 que seguirei. :Azarys"
+  Background: {fileID: 0}
   alreadySpoke: 0
