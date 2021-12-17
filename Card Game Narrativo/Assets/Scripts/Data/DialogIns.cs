@@ -9,7 +9,7 @@ public class DialogIns : DialogObj
     [TextArea(5,10)]
     public string[] Dialog;
 
-    public Image Background;
+    public Sprite Background;
 
     public bool alreadySpoke;
     private void Awake()

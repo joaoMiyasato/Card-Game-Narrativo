@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e92c14aa340ded4b8b36641fe09b30a, type: 3}
+  m_Name: PC 23
+  m_EditorClassIdentifier: 
+  type: 1
+  Dialog:
+  - "Apesar de voc\xEA ter sido ferido e derrotado, os soldados venceram os bandidos
+    com algumas baixas.:Narrador"
+  - "Sem d\xFAvida teria sido pior sem a sua ajuda."
+  - "Em agradecimento, o oficial e seus homens restantes o carregam at\xE9 o posto
+    mais pr\xF3ximo da guarda. :::36"
+  Background: {fileID: 21300000, guid: 5f422701382dc734f9fecfb9f5ca8336, type: 3}
+  alreadySpoke: 0

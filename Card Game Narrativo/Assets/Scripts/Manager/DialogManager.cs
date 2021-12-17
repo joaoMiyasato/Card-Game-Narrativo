@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class DialogManager : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class DialogManager : MonoBehaviour
     public List<DialogIns> DialogList;
     public List<ChoiceIns> ChoiceList;
     public Animator anim;
-    public GameObject speakerOther;
+    public GameObject speakerOther, speakerNPC;
     public Sprite[] NPCs;
 
     [HideInInspector]public int indexDialog = 0;
@@ -25,6 +26,8 @@ public class DialogManager : MonoBehaviour
 
     private bool showCardsToPickBool;
 
+    private int winGo, loseGo;
+
     void Awake()
     {
         instance = this;
@@ -36,13 +39,13 @@ public class DialogManager : MonoBehaviour
     void Update()
     {
         currendDialog = DialogList[indexDialogList];
-        if(Input.GetKeyDown(KeyCode.R))
-        {
-            indexDialog = 0;
-            indexDialogAnswer = 0;
-            indexDialogList = 0;
-            Say();
-        }
+        // if(Input.GetKeyDown(KeyCode.R))
+        // {
+        //     indexDialog = 0;
+        //     indexDialogAnswer = 0;
+        //     indexDialogList = 0;
+        //     Say();
+        // }
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
@@ -64,7 +67,7 @@ public class DialogManager : MonoBehaviour
 
             if(waitingForBattle)
             {
-                BattleSystem.instance.startBattle();
+                BattleSystem.instance.startBattle(winGo, loseGo);
                 waitingForBattle = false;
             }
 
@@ -82,11 +85,22 @@ public class DialogManager : MonoBehaviour
     private string lastSpeaker = "";
     public void Say()
     {
+        EventSystem.current.SetSelectedGameObject(null);
         DialogList[indexDialogList].alreadySpoke = true;
         //0 Fala, 1 Nome, 2 o quê, 3 ir pra dialogo, 4 ir para pergunta, 5 animação, 6 e 7 batalha
         string[] parts = DialogList[indexDialogList].Dialog[indexDialog].Split(':');
         string speech = parts[0];
         string speaker = (parts.Length >= 2 && parts[1] != "") ? parts[1] : lastSpeaker;
+
+        if(DialogList[indexDialogList].Background != null)
+        {
+            GameObject.Find("Canvas").transform.Find("Background").gameObject.SetActive(true);
+            GameObject.Find("Canvas").transform.Find("Background").GetComponent<Image>().sprite = DialogList[indexDialogList].Background;
+        }
+        else
+        {
+            GameObject.Find("Canvas").transform.Find("Background").gameObject.SetActive(false);
+        }
 
         if(parts.Length >= 3)
         {
@@ -125,7 +139,8 @@ public class DialogManager : MonoBehaviour
         {
             if(parts[2] == "batalha")
             {
-                //BattleSystem.instance.startBattle(int.Parse(parts[6]), int.Parse(parts[7]));
+                winGo = int.Parse(parts[6]);
+                loseGo = int.Parse(parts[7]);
             }
         }
 
@@ -137,6 +152,7 @@ public class DialogManager : MonoBehaviour
         if(lastSpeaker == "Azarys")
         {
             speakerOther.gameObject.SetActive(false);
+            speakerNPC.gameObject.SetActive(false);
             dialogue.speechPanel.transform.Find("DialogBox").gameObject.transform.Find("Image").transform.localScale = new Vector3(-1,1,1);
         }
         else
@@ -145,8 +161,37 @@ public class DialogManager : MonoBehaviour
             if(lastSpeaker == "Illana")
             {
                 speakerOther.gameObject.SetActive(true);
-                speakerOther.GetComponent<Image>().color = new Color32(255,255,255,255);
                 speakerOther.GetComponent<Image>().sprite = NPCs[0];
+            }
+            else if(lastSpeaker == "Defyna")
+            {
+                speakerOther.gameObject.SetActive(true);
+                speakerOther.GetComponent<Image>().sprite = NPCs[1];
+            }
+            else if(lastSpeaker == "Oficial")
+            {
+                speakerNPC.gameObject.SetActive(true);
+                speakerNPC.GetComponent<Image>().sprite = NPCs[2];
+            }
+            else if(lastSpeaker == "Guarda")
+            {
+                speakerNPC.gameObject.SetActive(true);
+                speakerNPC.GetComponent<Image>().sprite = NPCs[4];
+            }
+            else if(lastSpeaker == "Imperador Envoz")
+            {
+                speakerNPC.gameObject.SetActive(true);
+                speakerNPC.GetComponent<Image>().sprite = NPCs[5];
+            }
+            else if(lastSpeaker == "Barão")
+            {
+                speakerNPC.gameObject.SetActive(true);
+                speakerNPC.GetComponent<Image>().sprite = NPCs[3];
+            }
+            else if(lastSpeaker == "Bibliotecário")
+            {
+                speakerNPC.gameObject.SetActive(true);
+                speakerNPC.GetComponent<Image>().sprite = NPCs[6];
             }
         }
 

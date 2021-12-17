@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e92c14aa340ded4b8b36641fe09b30a, type: 3}
+  m_Name: PC 25
+  m_EditorClassIdentifier: 
+  type: 1
+  Dialog:
+  - Ao chegarem no posto da guarda na estrada, o oficial e seus soldados contam a
+    todos sobre a sua ajuda e sobre o combate. :Narrador
+  - "O grupo retorna \xE0 capital, mas outros soldados insistem em carreg\xE1-lo
+    ferido at\xE9 o vilarejo de Campo Verde, onde poder\xE1 descansar at\xE9 se curar.
+    :::33"
+  Background: {fileID: 21300000, guid: 5f422701382dc734f9fecfb9f5ca8336, type: 3}
+  alreadySpoke: 0

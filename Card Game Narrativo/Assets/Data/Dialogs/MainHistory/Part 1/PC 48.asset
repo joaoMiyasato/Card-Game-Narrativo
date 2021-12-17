@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e92c14aa340ded4b8b36641fe09b30a, type: 3}
+  m_Name: PC 48
+  m_EditorClassIdentifier: 
+  type: 1
+  Dialog:
+  - "Ao terminar seu relato sobre o envolvimento de DEFYZA e ILLANA, o bar\xE3o afirma
+    supeitar de onde poderia haver um item escondido que constasse em um mapa antigo.
+    :Narrador"
+  - "Junto de diversos soldados, o bar\xE3o guia voc\xEA at\xE9 o templo da cidade. "
+  - "Ap\xF3s entrar, ele caminha apressado at\xE9 um jovem sacerdote."
+  - "Onde est\xE1 o sumo-sacerdote? :Bar\xE3o"
+  - "Recolhido em sua c\xE2mara, senhor.:Sacerdote"
+  - "Pois v\xE1 cham\xE1-lo. :Bar\xE3o"
+  - "E diga que eu preciso com urg\xEAncia da chave secreta para subir."
+  - Subir onde, senhor?:Sacerdote
+  - "Apenas v\xE1. E corra!:Bar\xE3o"
+  - "Enquanto o jovem sacerdote busca o superior dele, o bar\xE3o lhe explica que
+    existe uma pequena c\xE2mara oculta entre o telhado do templo e o teto do sal\xE3o
+    principal, um segredo passado em Campo Verde de bar\xE3o para bar\xE3o e de sumo-sacerdote
+    para sumo-sacerdote.:Narrador"
+  - "E o que est\xE1 guardado l\xE1?:Azarys"
+  - "Registros de um tempo que n\xE3o devemos recordar.:Bar\xE3o"
+  - "O sumo-sacerdote aparece com a chave e, junto do bar\xE3o, se encaminha at\xE9
+    um corredor estreito atr\xE1s do altar principal. :Narrador"
+  - "Ap\xF3s abrir uma porta ao fundo, todos se deparam com uma pequena despensa
+    com baldes, esfreg\xF5es e panos. "
+  - 'O sumo-sacerdote afasta uma estante e aperta duas pedras da parede. '
+  - Com um clique, uma passagem se abre ao fundo.
+  - "Apenas n\xF3s tr\xEAs.:Sumo-Sacerdote"
+  - "O bar\xE3o, o sumo-sacerdote e voc\xEA sobem por uma escada circular at\xE9
+    encontrarem uma porta de madeira robusta. :Narrador"
+  - "Assim que o sumo-sacerdote a destranca e abre, um vulto escuro e alado passa
+    perante os olhos de voc\xEAs. "
+  - "Ao entrar e olhar para todos os lados voc\xEA n\xE3o identifica nada. "
+  - "Apenas alguns buracos que levam para o forro da constru\xE7\xE3o."
+  - Aquilo era um morcego?:Sumo-Sacerdote
+  - "Espero que sim. :Bar\xE3o"
+  - Ou isso, ou alguma das magas que estamos procurando.
+  - "Enquanto o bar\xE3o explica para o sumo-sacerdote tudo que est\xE1 acontecendo,
+    voc\xEA remexe em dois ba\xFAs repletos de livros e pergaminhos enrolados por
+    couro. :Narrador"
+  - "Eles datam de antes da constitui\xE7\xE3o do imp\xE9rio. "
+  - "Quando voc\xEA pega um para abrir, o bar\xE3o segura o seu bra\xE7o."
+  - "Ningu\xE9m deve l\xEA-los. :Bar\xE3o"
+  - "Faz parte do meu dever para com o imp\xE9rio. "
+  - 'Vamos embora. '
+  - "Se o morcego era de fato uma das magas, j\xE1 est\xE1 longe daqui.::pergunta::16"
+  Background: {fileID: 21300000, guid: a43417e0bc828df459005f2ba20bde0b, type: 3}
+  alreadySpoke: 0

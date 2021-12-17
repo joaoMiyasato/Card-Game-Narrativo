@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e92c14aa340ded4b8b36641fe09b30a, type: 3}
+  m_Name: PC 65
+  m_EditorClassIdentifier: 
+  type: 1
+  Dialog:
+  - "Voc\xEA segue ILLANA pelos c\xE9us sem dificuldades, passando por cima dos muros
+    de Campo Verde. :Narrador"
+  - "De repente, quando j\xE1 estavam mais afastados do vilarejo, voc\xEA sente uma
+    aproxima\xE7\xE3o violenta por cima, enquanto enxerga no ch\xE3o uma sombra investir
+    contra a sua. "
+  - "Voc\xEA mergulha para o lado em tempo de escapar das garras de um grifo, que
+    grunhe um aviso e segue ILLANA na dire\xE7\xE3o Oeste. "
+  - "Voc\xEA desce at\xE9 o ch\xE3o para se recuperar do susto e se destransforma. "
+  - "Um oficial \xE0 cavalo se aproxima."
+  - "Voc\xEA viu aquilo? :Oficial"
+  - Era um monstro?
+  - "N\xE3o sei exatamente o que era, mas me atacou enquanto eu estava transformado
+    em \xE1guia.:Azarys"
+  - "Voc\xEA \xE9 AZARYS, ent\xE3o? :Oficial"
+  - "Fomos informados sobre a sua miss\xE3o. "
+  - Sou.:Azarys
+  - Posso ajudar em algo? :Oficial
+  - "Do contr\xE1rio, preciso avisar a guarda de Campo Verde sobre esse monstro alado. "
+  - De onde ele surgiu?
+  - "N\xE3o sei dizer, mas preciso apenas retomar o meu caminho. "
+  - Quem sabe encontro respostas adiante. Que os deuses o protejam. :::92
+  Background: {fileID: 21300000, guid: b112c006384658847abd3a64b97af78b, type: 3}
+  alreadySpoke: 0

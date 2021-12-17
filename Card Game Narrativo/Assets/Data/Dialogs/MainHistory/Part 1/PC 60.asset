@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e92c14aa340ded4b8b36641fe09b30a, type: 3}
+  m_Name: PC 60
+  m_EditorClassIdentifier: 
+  type: 1
+  Dialog:
+  - "Ap\xF3s ouvir o seu relato sobre DEFYZA, ILLANA e o mapa roubado da biblioteca
+    da capital, o bar\xE3o suspira e o encara com decep\xE7\xE3o.:Narrador"
+  - "Voc\xEA deveria ter me dito isso antes. :Bar\xE3o"
+  - 'Tudo poderia ter sido diferente. '
+  - "Se elas est\xE3o em busca de artefatos ou registros antigos, aposto uma boa
+    parte das minhas riquezas que sei qual foi o alvo delas."
+  - Qual?:Azarys
+  - "De nada adianta eu revelar um segredo se ILLANA j\xE1 partiu de Campo Verde
+    com o que veio buscar. N\xE3o insista.:Bar\xE3o"
+  - Tudo bem. E o que faremos agora?:Azarys
+  - "Voc\xEA seguir\xE1 com sua miss\xE3o, partindo para oeste. :Bar\xE3o"
+  - "\xC9 prov\xE1vel que \xE9 para l\xE1 que ela tenha ido, se ela voou nessa dire\xE7\xE3o. "
+  - "E eu comunicarei o imperador sobre tudo que aconteceu. Voc\xEA pode ir agora."
+  - "Que os deuses o protejam, bar\xE3o. :Azarys::97"
+  Background: {fileID: 21300000, guid: 2beca7016b2a0b04b822802c5e3aabd8, type: 3}
+  alreadySpoke: 0

@@ -42,8 +42,11 @@ public class BattleSystem : MonoBehaviour
         dialogueText = dialogueField.transform.Find("Dialog").gameObject.GetComponent<Text>();
     }
 
-    public void startBattle()
+    private int winGo, loseGo;
+    public void startBattle(int xx, int yy)
     {
+        winGo = xx;
+        loseGo = yy;
         inBattle = true;
         SpeachManager.instance.speechPanel.SetActive(false);
         battlePanel.SetActive(true);
@@ -130,12 +133,12 @@ public class BattleSystem : MonoBehaviour
         dialogueField.SetActive(true);
         if(state == BattleState.WON)
         {
-            DialogManager.instance.setDialogList(2);
+            DialogManager.instance.setDialogList(winGo);
             dialogueText.text = "you won the battle";
         }
         else if(state == BattleState.LOST)
         {
-            DialogManager.instance.setDialogList(2);
+            DialogManager.instance.setDialogList(loseGo);
             dialogueText.text = "you were defeated";  
         }
 

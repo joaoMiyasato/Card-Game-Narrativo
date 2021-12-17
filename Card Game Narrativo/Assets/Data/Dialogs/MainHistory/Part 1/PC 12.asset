@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e92c14aa340ded4b8b36641fe09b30a, type: 3}
+  m_Name: PC 12
+  m_EditorClassIdentifier: 
+  type: 1
+  Dialog:
+  - "Enquanto voc\xEA passa pelo port\xE3o norte da capital, um oficial do ex\xE9rcito
+    o interpela.:Narrador"
+  - Um mago imperial! Justo o que eu estava buscando.:Oficial
+  - "Um grupo de bandidos ousou se esconder em uma \xE1rea de mata junto \xE0 capital."
+  - "Minha ordem \xE9 lidar com eles. "
+  - Eu agradeceria muito a sua ajuda.
+  - "Estou em uma miss\xE3o que me leva para o norte. E com certa pressa.:Azarys"
+  - "\xC9 para l\xE1 que eu e meus soldados estamos indo.:Oficial"
+  - "Ser\xE1 apenas um pequeno desvio da estrada. "
+  - "Sua magia poder\xE1 nos ajudar a encontr\xE1-los mais r\xE1pido e a diminuir
+    o risco contra nossas vidas.::pergunta::2"
+  Background: {fileID: 21300000, guid: 3872a5a7e255c6941abc87a5252c49f0, type: 3}
+  alreadySpoke: 0

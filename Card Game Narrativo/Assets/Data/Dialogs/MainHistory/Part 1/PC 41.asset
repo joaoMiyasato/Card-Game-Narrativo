@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e92c14aa340ded4b8b36641fe09b30a, type: 3}
+  m_Name: PC 41
+  m_EditorClassIdentifier: 
+  type: 1
+  Dialog:
+  - "Quando os lobos notaram que voc\xEA n\xE3o representava mais amea\xE7a, pararam
+    de atac\xE1-lo. :Narrador"
+  - "Voc\xEA fugiu machucado, e eles n\xE3o o perseguiram. Ap\xF3s algum tempo, voc\xEA
+    chega em uma campina, de onde avista um vilarejo. "
+  - "Voc\xEA precisa de descanso e de tratamento, e o vilarejo \xE9 a melhor op\xE7\xE3o.
+    :::63"
+  Background: {fileID: 21300000, guid: b112c006384658847abd3a64b97af78b, type: 3}
+  alreadySpoke: 0

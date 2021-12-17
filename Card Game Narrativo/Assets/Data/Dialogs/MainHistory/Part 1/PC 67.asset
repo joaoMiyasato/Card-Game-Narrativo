@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e92c14aa340ded4b8b36641fe09b30a, type: 3}
+  m_Name: PC 67
+  m_EditorClassIdentifier: 
+  type: 1
+  Dialog:
+  - "Diante de suas palavras, o bar\xE3o coloca a m\xE3o no cabo de sua espada.:Narrador"
+  - "Isso n\xE3o \xE9 um debate, AZARYS. :Bar\xE3o"
+  - "Trata-se de um de meus deveres imperiais, e nada me far\xE1 descumpri-lo. "
+  - "Voc\xEA deve estar cansado. "
+  - "Procure uma hospedaria e retome a sua miss\xE3o amanh\xE3. "
+  - Eu avisarei ao imperador sobre todo o ocorrido.
+  - Muito bem. :Azarys::96
+  Background: {fileID: 21300000, guid: a43417e0bc828df459005f2ba20bde0b, type: 3}
+  alreadySpoke: 0

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e92c14aa340ded4b8b36641fe09b30a, type: 3}
+  m_Name: PC 14
+  m_EditorClassIdentifier: 
+  type: 1
+  Dialog:
+  - "Ap\xF3s algum tempo caminhando por uma mata, o oficial vira para voc\xEA, na
+    presen\xE7a de todos os demais soldados.:Narrador"
+  - "Os bandidos devem estar por essa \xE1rea.:Oficial"
+  - "Voc\xEA pode ajudar a encontr\xE1-los? "
+  - "Talvez com alguma transforma\xE7\xE3o?::pergunta::4"
+  Background: {fileID: 21300000, guid: 03080b0c7facefc44830cac1a465efe0, type: 3}
+  alreadySpoke: 0

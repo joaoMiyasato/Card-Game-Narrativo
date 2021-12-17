@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e92c14aa340ded4b8b36641fe09b30a, type: 3}
+  m_Name: PC 50
+  m_EditorClassIdentifier: 
+  type: 1
+  Dialog:
+  - "Enquanto voc\xEA aguardava na pra\xE7a central de Campo Verde, a guarda realizou
+    uma busca mais acentuada por pistas do paradeiro de ILLANA. :Narrador"
+  - Horas depois, com o auge da noite se aproximando, um oficial da guarda caminha
+    ao seu encontro.
+  - AZARYS! :Oficial
+  - "Suas a\xE7\xF5es para ajudar o povo est\xE3o na boca de todos. "
+  - "Quando alguns populares souberam de sua miss\xE3o, nos ajudaram a juntar informa\xE7\xF5es."
+  - "Isso \xE9 \xF3timo. :Azarys"
+  - Alguma pista foi encontrada?
+  - Sim. :Oficial
+  - "Um homem afirma ter visto algu\xE9m com a descri\xE7\xE3o de ILLANA rondando
+    o nosso templo no in\xEDcio da noite. "
+  - Ele afirma que ela tentava se manter nas sombras, mas que viu muito bem o seu
+    rosto.
+  - "Ent\xE3o \xE9 para o templo que eu vou.:Azarys"
+  - "Alguns soldados e eu iremos com voc\xEA.:Oficial:pergunta::17"
+  Background: {fileID: 21300000, guid: 2beca7016b2a0b04b822802c5e3aabd8, type: 3}
+  alreadySpoke: 0

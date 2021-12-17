@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e92c14aa340ded4b8b36641fe09b30a, type: 3}
+  m_Name: PC 68
+  m_EditorClassIdentifier: 
+  type: 1
+  Dialog:
+  - "Ap\xF3s acordar, voc\xEA toma o desjejum e \xE9 informado de que nem ILLANA
+    nem DEFYZA foram encontradas em Campo Verde. :Narrador"
+  - "Ent\xE3o se prepara para partir do vilarejo. Quando toma as ruas, uma crian\xE7a
+    lhe entrega uma carta. Nela voc\xEA l\xEA..."
+  - "\u201CMal consigo expressar em palavras o meu desapontamento com voc\xEA, mestre.
+    :Carta"
+  - 'E eu sequer deveria utilizar essa palavra. '
+  - "N\xE3o imaginava que pudesse aparecer com soldados para me procurar. "
+  - "Nem que entregaria a exist\xEAncia de DEFYZA ou meu envolvimento com ela. "
+  - "Eu falei para ela que voc\xEA n\xE3o era uma amea\xE7a, mas parece que eu estava
+    errada. "
+  - "Felizmente, voc\xEAs n\xE3o chegaram em tempo e eu consegui o que buscava. "
+  - "Mesmo com voc\xEA contra mim, eu encontrarei a verdade. ILLANA.\""
+  - "Ap\xF3s ler, voc\xEA deixa Campo Verde sem saber com certeza para onde ILLANA
+    seguiu. :Narrador"
+  - "No entanto, escolhe a dire\xE7\xE3o oeste para a sua jornada, baseado na posi\xE7\xE3o
+    em havia encontrado DEFYZA na floresta. :::97"
+  Background: {fileID: 21300000, guid: 2beca7016b2a0b04b822802c5e3aabd8, type: 3}
+  alreadySpoke: 0

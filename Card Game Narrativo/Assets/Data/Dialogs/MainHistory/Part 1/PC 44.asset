@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e92c14aa340ded4b8b36641fe09b30a, type: 3}
+  m_Name: PC 44
+  m_EditorClassIdentifier: 
+  type: 1
+  Dialog:
+  - "A mulher aguarda im\xF3vel enquanto voc\xEA se destransforma. Ela sorri.:Narrador"
+  - "Quem \xE9 voc\xEA?:Azarys"
+  - "Meu nome \xE9 Defyza. :Mulher"
+  - E sinto-me honrada em conhecer um colega mago. :Defyza
+  - "Ainda que voc\xEA pudesse melhorar muito se n\xE3o tivesse preso a amarras in\xFAteis. "
+  - "E voc\xEA, quem \xE9?"
+  - "Meu nome \xE9 AZARYS.:Azarys"
+  - Ah! O mestre de ILLANA. :Defyza
+  - "Tinha esperan\xE7a de que fosse voc\xEA."
+  - "O que voc\xEA sabe sobre ela? Onde ela est\xE1?:Azarys"
+  - "Acalme-se, ela est\xE1 bem. :Defyza"
+  - "Voc\xEA deveria deix\xE1-la partir. "
+  - "Ela ser\xE1 mais feliz saciando toda a sua curiosidade sobre a magia."
+  - "E entregando-se \xE0 magia corrupta? :Azarys"
+  - "N\xE3o pretendo deixar isso acontecer. "
+  - "Foi voc\xEA quem a influenciou?"
+  - Talvez. :Defyza
+  - "O que voc\xEA far\xE1 sobre isso? "
+  - "Se tentar me atacar, voc\xEA se arrepender\xE1. "
+  - "N\xE3o h\xE1 limites para a minha magia. "
+  - "Perto das minhas, as suas transforma\xE7\xF5es s\xE3o ris\xEDveis. "
+  - "Voc\xEA est\xE1 admitindo ser uma maga corrupta.:Azarys"
+  - "N\xE3o existe magia corrupta. :Defyza"
+  - "Existe aquela que o imp\xE9rio deseja que voc\xEA use e aquela que o imp\xE9rio
+    deseja que voc\xEA nunca aprenda. "
+  - 'ILLANA estava aberta a aprender sobre isso. '
+  - "Entre voc\xEAs dois, \xE9 ela quem ainda tem algo a ensinar."
+  - "Palavras muito confi\xE1veis vindas de uma pessoa que se entregou \xE0 corrup\xE7\xE3o.
+    :Azarys"
+  - "Onde est\xE1 ILLANA?"
+  - Em Campo Verde, perseguindo a verdade. :Defyza
+  - "Apenas lhe digo isso pois ela tem esperan\xE7a de que voc\xEA a compreenda."
+  - "Se est\xE1 disposta a falar, ent\xE3o diga-me algo mais. :Azarys"
+  - Foi ela quem roubou um mapa da biblioteca oeste da capital?
+  - Sim, por um bom motivo.  :Defyza
+  - "O mapa mostra a localiza\xE7\xE3o de registros e itens que provar\xE3o a verdade
+    para ela."
+  - "E o primeiro est\xE1 em Campo Verde?:Azarys"
+  - Descubra.:defyza
+  - "A maga se transforma em um p\xE1ssaro e some entre as \xE1rvores. :Narrador"
+  - "Voc\xEA deixa a floresta e parte na dire\xE7\xE3o do vilarejo de Campo Verde.
+    :::60"
+  Background: {fileID: 21300000, guid: b112c006384658847abd3a64b97af78b, type: 3}
+  alreadySpoke: 0

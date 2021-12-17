@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e92c14aa340ded4b8b36641fe09b30a, type: 3}
+  m_Name: PC 57
+  m_EditorClassIdentifier: 
+  type: 1
+  Dialog:
+  - "Enquanto voc\xEA se encaminha para a sa\xEDda oeste de Campo Verde, supondo
+    que ILLANA manteve essa dire\xE7\xE3o ap\xF3s se afastar do vilarejo, um guarda
+    apressado o alcan\xE7a.:Narrador"
+  - Que bom que o encontrei, AZARYS. :Guarda
+  - "Procurei na morada do bar\xE3o, mas voc\xEA n\xE3o estava mais l\xE1. "
+  - "A procura pela maga corrupta levou mais soldados \xE0s ruas. "
+  - 'E um deles acredita ter visto uma jovem nos arredores do templo. '
+  - "Pela descri\xE7\xE3o que ele deu, pode ter sido a sua aprendiz."
+  - "E voc\xEAs sabem se ela invadiu o templo e roubou alguma coisa?:Azarys"
+  - "N\xE3o sei dizer. :Guarda"
+  - "Os sacerdotes n\xE3o informaram nada."
+  - "Na verdade, n\xE3o importa. Ela j\xE1 partiu de Campo Verde. \xC9 melhor eu
+    segui-la. Obrigado. :Azarys::89"
+  Background: {fileID: 21300000, guid: 2beca7016b2a0b04b822802c5e3aabd8, type: 3}
+  alreadySpoke: 0

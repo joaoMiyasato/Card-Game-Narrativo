@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e92c14aa340ded4b8b36641fe09b30a, type: 3}
+  m_Name: PC 54
+  m_EditorClassIdentifier: 
+  type: 1
+  Dialog:
+  - "Pr\xF3ximo do alvorecer, voc\xEA acorda com um impacto fraco contra o peito.
+    :Narrador"
+  - "Olhando ao redor do quarto na moradia do bar\xE3o, voc\xEA enxerga ILLANA de
+    p\xE9 ao lado da janela. Ela segura pequenas pedrinhas."
+  - "N\xE3o acredito que voc\xEA denunciou a presen\xE7a de DEFYZA nos arredores
+    de Campo Verde. :Illana"
+  - "Eu garanti a ela que voc\xEA n\xE3o seria uma amea\xE7a!"
+  - "Ela \xE9 uma maga corrupta e n\xE3o pode ficar livre para destruir o imp\xE9rio.
+    :Azarys"
+  - "Mas n\xE3o se preocupe, eu nada falei sobre o envolvimento de voc\xEAs. "
+  - "Ali\xE1s, no que voc\xEA estava pensando?"
+  - "Em descobrir a verdade. Voc\xEA n\xE3o leu a carta?:Illana"
+  - "Eu li, mas n\xE3o pareciam as palavras da jovem que eu treino desde crian\xE7a.
+    :Azarys"
+  - Quantas vezes lhe expliquei sobre a magia corrupta?
+  - "N\xE3o importa a quantidade de vezes se voc\xEA estava errado. :Illana"
+  - "O imp\xE9rio n\xE3o quer que ningu\xE9m saiba a verdade sobre a magia. "
+  - Sobre as verdadeiras possibilidades dela.
+  - Pare de ouvir DEFYZA. :Azarys
+  - 'Retorne comigo agora para a capital, ainda podemos consertar tudo isso. '
+  - "Voc\xEA receber\xE1 uma pequena puni\xE7\xE3o, mas tenho certeza de que o imperador
+    permitir\xE1 a continuidade do seu treinamento."
+  - "E n\xE3o avisar DEFYZA sobre o ex\xE9rcito saber de sua exist\xEAncia? :Illana"
+  - De modo algum.
+  - "Talvez eles n\xE3o a encontrem. :Azarys"
+  - "Esque\xE7a ela, esque\xE7a essa curiosidade exagerada. "
+  - "Se seguir por esse caminho, em algum momento eu n\xE3o conseguirei mais ajud\xE1-la."
+  - Eu entendo os riscos.:Illana
+  - "Voc\xEA tem certeza? :Azarys"
+  - "Voc\xEA sabe qual a puni\xE7\xE3o por utilizar a magia corrupta."
+  - E eu a aceito. :Illana
+  - "N\xE3o tenho medo de morrer em busca da verdade."
+  - Deixe de ser tola! :Azayrs
+  - "Voc\xEA n\xE3o sabe do que est\xE1 falando."
+  - "\xC9 voc\xEA, mestre, quem est\xE1 enganado. :Illana"
+  - "Como voc\xEA pode n\xE3o desconfiar? "
+  - "E defender t\xE3o cegamente o imp\xE9rio? "
+  - "Por acaso tamb\xE9m me denunciar\xE1 se eu n\xE3o desistir de procurar a verdade
+    e retornar \xE0 capital com voc\xEA?::pergunta::19"
+  Background: {fileID: 21300000, guid: 2beca7016b2a0b04b822802c5e3aabd8, type: 3}
+  alreadySpoke: 0
